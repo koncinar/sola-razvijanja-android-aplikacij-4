@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appear">Appear</string>
+    <string name="can_you_hear_me_now">Can you hear me now</string>
+    <string name="chomp">Chomp</string>
+    <string name="contact_type">Contact type</string>
+    <string name="dragon_wheeze">Dragon wheeze</string>
+    <string name="electronic_interference">Electronic interference</string>
+    <string name="elfs_laughing">Elf laughing</string>
+    <string name="euh">Euh</string>
+    <string name="firebreath">Firebreath</string>
+    <string name="frustration">Frustration</string>
+    <string name="grunt">Grunt</string>
+    <string name="gulp">Gulp</string>
+    <string name="moan">Moan</string>
+    <string name="pump">Pump</string>
+    <string name="scaring_cat_away">Scaring the cat away</string>
+    <string name="shots">Shots</string>
+    <string name="sneezing">Sneezing</string>
+    <string name="thud">Thud</string>
+    <string name="vacuum_and_trumpet">Vacuum and trumpet</string>
+    <string name="yeah_really">Yeah really</string>
+</resources>
