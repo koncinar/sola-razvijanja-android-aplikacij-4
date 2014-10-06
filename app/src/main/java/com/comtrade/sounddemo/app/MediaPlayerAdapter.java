@@ -15,7 +15,7 @@ import java.util.List;
  * <p>The adapter for handling the list of sounds.</p>
  * <p>Created by <a href="mailto:rok.koncina@comtrade.com">Rok Koncina</a> on 3.10.2014.</p>
  */
-class SoundsListAdapter extends BaseAdapter implements View.OnClickListener, MediaPlayer.OnCompletionListener {
+class MediaPlayerAdapter extends BaseAdapter implements View.OnClickListener, MediaPlayer.OnCompletionListener {
     private Context context;
 
     /**
@@ -33,7 +33,7 @@ class SoundsListAdapter extends BaseAdapter implements View.OnClickListener, Med
      */
     private View currentlyPlayingRoot;
 
-    public SoundsListAdapter(Context context, List<Sound> sounds) {
+    public MediaPlayerAdapter(Context context, List<Sound> sounds) {
         this.context = context;
         this.sounds = sounds;
     }
