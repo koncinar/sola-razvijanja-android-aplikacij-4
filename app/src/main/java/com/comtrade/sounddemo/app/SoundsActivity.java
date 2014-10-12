@@ -25,15 +25,7 @@ public class SoundsActivity extends Activity implements ActionBar.TabListener {
 
         initSoundsList();
 
-
         initActionBar();
-
-
-//        if (savedInstanceState == null) {
-//            getFragmentManager().beginTransaction()
-//                    .add(R.id.container, new SoundListFragment())
-//                    .commit();
-//        }
     }
 
     private void initSoundsList() {
@@ -69,15 +61,19 @@ public class SoundsActivity extends Activity implements ActionBar.TabListener {
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
         // add tab that plays sounds using MediaPlayer
-        actionBar.addTab(actionBar.newTab().setText("MediaPlayer").setTabListener(this));
+        actionBar.addTab(actionBar.newTab().setText("Media Player").setTabListener(this));
 
         // add tab that plays sounds using SoundPool
-        actionBar.addTab(actionBar.newTab().setText("MediaPlayer").setTabListener(this));
+        actionBar.addTab(actionBar.newTab().setText("Sound Pool").setTabListener(this));
+
+        // add tab that plays sounds using Stream
+        actionBar.addTab(actionBar.newTab().setText("Stream").setTabListener(this));
 
         viewPager.setAdapter(new FragmentPagerAdapter(getFragmentManager()) {
             Fragment[] fragments = new Fragment[]{
                     new SoundListFragment(SoundListFragment.TYPE_MEDIA_PLAYER),
-                    new SoundListFragment(SoundListFragment.TYPE_SOUND_POOL)
+                    new SoundListFragment(SoundListFragment.TYPE_SOUND_POOL),
+                    new SoundStreamFragment()
             };
 
             @Override

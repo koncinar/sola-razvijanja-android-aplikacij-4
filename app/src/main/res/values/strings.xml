@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">SoundDemo</string>
     <string name="lbl_select_sound">Select a sound to play</string>
+    <string name="lbl_url_sound">Insert URL to the sound</string>
+    <string name="btn_play">Play</string>
+    <string name="msg_empty_url">Please enter a non-empty URI</string>
+    <string name="msg_wrong_url">Please enter a valid URI</string>
 </resources>
